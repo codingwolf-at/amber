@@ -8,7 +8,7 @@ export const Header = ({ name }) => {
         <AvatarBadge borderColor='papayawhip' bg='tomato' boxSize='1em' />
       </Avatar>
       <Heading as="h1" ml={3} size="lg">
-        Amber
+        { name }
       </Heading>
     </Flex>
   )
