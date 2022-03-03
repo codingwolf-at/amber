@@ -1,6 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import { useContext } from "react";
-import { Header } from "./components";
+import { Header, TextBox } from "./components";
 import { ChatContext } from "./contexts";
 import "./styles.css";
 
@@ -11,6 +11,7 @@ export default function App() {
     <Container maxWidth="md">
       <Header name="Amber" />
       <h1>Hello CodeSandbox</h1>
+      <TextBox />
     </Container>
   );
 }
