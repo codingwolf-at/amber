@@ -7,7 +7,7 @@ import "./styles.css";
 export default function App() {
   const { chat } = useContext(ChatContext);
   return (
-    <Flex p={5} flexDirection="column" mx="auto" maxHeight="100vh" maxWidth="md">
+    <Flex p={5} flexDirection="column" mx="auto" minHeight="100vh" maxWidth="md">
       <Header name="Amber" />
       <ChatWindow />
       <TextBox />
