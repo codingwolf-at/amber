@@ -8,7 +8,7 @@ export const ChatWindow = () => {
     <Flex direction='column' flexGrow={1}>
       {
         chat.map(({id, text, author}) => (
-          <Container py={2} mt={2} px={5} bg={author === 'bot' ? "green.200" : "gray.200"}>
+          <Container key={id} py={2} mt={2} px={5} bg={author === 'bot' ? "green.200" : "gray.200"}>
              <Text fontSize='xl'>{text}</Text>
           </Container>
         ))

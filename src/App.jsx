@@ -6,7 +6,6 @@ import "./styles.css";
 
 export default function App() {
   const { chat } = useContext(ChatContext);
-  console.log(chat)
   return (
     <Flex p={5} flexDirection="column" mx="auto" minHeight="100vh" maxWidth="md">
       <Header name="Amber" />
