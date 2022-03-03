@@ -1,7 +1,6 @@
 import { Container, VStack, Text, Flex } from "@chakra-ui/react"
 import { useContext } from "react"
 import { ChatContext } from "../../contexts"
-import "./ChatWindow.css";
 
 export const ChatWindow = () => {
   const { chat } = useContext(ChatContext);

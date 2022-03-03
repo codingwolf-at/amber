@@ -22,6 +22,7 @@ export const TextBox = () => {
       text: inputValue,
       author: "bot"
     }));
+    setInputValue("");
   }
 
   return (
