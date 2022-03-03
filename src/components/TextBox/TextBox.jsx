@@ -20,11 +20,11 @@ export const TextBox = () => {
   }
 
   return (
-      <InputGroup>
-        <Input onChange={(e) => inputHandler(e)} value={inputValue} borderRightRadius={0} variant="filled" placeholder="Enter message" size="lg" />
-          <Button onClick={buttonHandler} borderLeftRadius={0} border="none" bg="gray.100" variant="outline" size='lg' >
-            Send
-          </Button>
-      </InputGroup>
+    <InputGroup>
+      <Input onChange={(e) => inputHandler(e)} value={inputValue} borderRightRadius={0} variant="filled" placeholder="Enter message" size="lg" />
+        <Button onClick={buttonHandler} borderLeftRadius={0} border="none" bg="gray.100" variant="outline" size='lg' >
+          Send
+        </Button>
+    </InputGroup>
   )
 }
