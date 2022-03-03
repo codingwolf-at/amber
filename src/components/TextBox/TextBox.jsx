@@ -17,10 +17,15 @@ export const TextBox = () => {
       text: inputValue,
       author: "user"
     }));
+    setChat(value => value.concat({
+      id: uuidv4(),
+      text: inputValue,
+      author: "bot"
+    }));
   }
 
   return (
-    <InputGroup p={4} bg="teal.500"> 
+    <InputGroup> 
       <Input onChange={(e) => inputHandler(e)} value={inputValue} borderRightRadius={0} variant="filled" placeholder="Enter message" size="lg" />
         <Button onClick={buttonHandler} borderLeftRadius={0} border="none" bg="gray.100" variant="outline" size='lg' >
           Send
